@@ -49,7 +49,6 @@
         <div class="form-container">
             <div class="content1">
                 <h1>Welcome Back !</h1>
-                <img src="\img\image.png">
                 <p>To keep connected with us please login with your personal information.</p>
                 <button type="submit">Login</button>  
             </div>
@@ -68,7 +67,7 @@
                     </a>
                 </div>
                 <p>OR</p>
-                <form id="register-form">
+                <form action="">
                     <input type="text" name="name" id="name" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <input type="password" name="passWord" id="passWord" placeholder="Password" required>
@@ -120,17 +119,8 @@
             
             if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
                 alert('Please fill out all fields.');
-            }
-            else{
-                var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                if(!emailPattern.test(email)){
-                    alert("Please enter valid email!");
-                    return;
-                }
-                else{
-                    alert("Registration Successfully completed!");
-                    window.location.href = './index.html';
-                }
+            } else {
+                window.location.href = './index.html';
             }
         });
         
