@@ -13,14 +13,13 @@ body{
   padding: 20px;
   background: #647df9;
 }
-
 .wrapper{
-  /* max-width: 1090px; */
+  max-width: 1090px;
   width: 100%;
-  /* margin: 1%; */
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .wrapper .table{
   background: #fff;
@@ -232,7 +231,7 @@ body{
   box-shadow: 0 5px 10px rgba(0,0,0,0.12);
 }
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -244,14 +243,5 @@ header img {
   width: 130px;
   border-radius: 6px;
   margin: 20px;
-}
-@media (min-width:320px) and (max-width:961px){
-  .wrapper{
-    flex-direction: column;
-    overflow-y: auto;
-    align-items: center;
-    
-  }
-  
 }
 
